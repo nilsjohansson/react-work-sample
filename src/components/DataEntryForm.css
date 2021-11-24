@@ -1,0 +1,47 @@
+.def-container {
+    display: grid;
+    grid-template-columns: minmax(1rem, auto) auto minmax(1rem, auto);
+    grid-template-rows: auto auto auto;
+    row-gap: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-radio {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.input-radio > input[type='radio'] {
+    margin-left: 0.5rem;
+    height: 2rem;    
+    width: 2rem;
+    background-color: khaki;
+    color: lightcoral;
+}
+
+button {
+    display: flex;
+    justify-self: flex-end;
+    border: 0;
+    background-color: var(--main-color);
+    color: #ffffff;
+    height: 3rem;
+    width: 16rem;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+button:disabled {
+    background-color: var(--tertiary-color);
+}
+
+button:hover {
+    background-color: lightskyblue;
+}
